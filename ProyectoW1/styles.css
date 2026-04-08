@@ -1,0 +1,28 @@
+/*Aqui se edita toda la pagina*/
+body{
+    background-color: black;
+    color: white;
+}
+
+/*Aqui se modifica el titulo*/
+ h1{
+    display: flex;
+    justify-content: center;
+    color: blueviolet;
+    text-align: center;
+}
+
+/*Aqui se modifica el mensaje arriba de los links*/
+header h2{
+    color: cyan;
+}
+
+/*Aqui se modifican los links*/
+header nav{
+    background-color: gra;
+
+}
+/*Aqui se modifican todos los parrafos (p)*/
+p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
