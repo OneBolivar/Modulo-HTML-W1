@@ -1,9 +1,13 @@
+*{
+    
+    padding: 0;
+    box-sizing: border-box;
+}
 /*Aqui se modifica unicamente el logo del navbar*/
 .Logo img{
     height: 35px;
     width: 35px;
 }
-
 /*Aqui se edita todo el header*/
 .navbar{
 
@@ -16,6 +20,10 @@
     color: white;
 
     
+}
+body{
+    background-color: blueviolet;
+    color: white;
 }
 /*-----------------------------------------------------------------------------*/
 /*Aqui se editan los links de la navbar*/
@@ -32,7 +40,7 @@
 /*Aqui se modifica la parte 1 (Primer fondo con texto) de la pagina*/
 .Parte1{
     color: white;
-    background-image: url("https://img.freepik.com/vector-premium/futurista-abstracto-fondo-tecnologia-purpura-negro-juegos-esports-banner-ilustracion-vectorial_180969-1204.jpg");
+    /*background-image: url("https://img.freepik.com/vector-premium/futurista-abstracto-fondo-tecnologia-purpura-negro-juegos-esports-banner-ilustracion-vectorial_180969-1204.jpg");*/
     font-size: 40px;
     text-align: center;
     margin: -54px;
@@ -40,12 +48,12 @@
 }
 /*Aqui se modifica el contenedor principal*/
 .Contenedor_Principal{
-    display: grid;
+    display: grid; /*Convierte el contenedor en una cuadricula, haciendo que los elementos se aomoden en filas y columnas*/
      /* Divide en 2 columnas: la 1ra ocupa el 35% y la 2da el resto (1fr) */
     grid-template-columns: 35% 1fr; 
     gap: 20px; 
     padding: 20px;
-    background-color: #f4ede3;
+   
 }
 
 /*Aqui se modifica la imagen principal 1*/
@@ -84,7 +92,7 @@ img {
     grid-template-columns: 35% 1fr; /* Divide en 2 columnas: la 1ra ocupa el 35% y la 2da el resto (1 fraccion(Unidad de medida flexible) */
     gap: 20px; 
     padding: 20px;
-    background-color: gray;
+   
 }
 
 /*Aqui se modifica el tercer contenedor */
@@ -96,5 +104,7 @@ img {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     width: 1890px;
+    background-color: white;
+    color: black;
     
 }
