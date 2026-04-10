@@ -3,11 +3,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-/*Aqui se modifica unicamente el logo del navbar*/
-.Logo img{
-    height: 35px;
-    width: 35px;
-}
 /*Aqui se edita todo el header*/
 .navbar{
 
@@ -21,6 +16,12 @@
 
     
 }
+/*Aqui se modifica unicamente el logo del navbar*/
+.Logo img{
+    height: 35px;
+    width: 35px;
+}
+
 body{
     background-color: blueviolet;
     color: white;
@@ -32,6 +33,7 @@ body{
     gap: 20px;  
                  
 }
+/*Aqui se modifica los links en especifico*/
 .links a{
     
     color: white;
@@ -99,7 +101,7 @@ img {
 .Contenedor_Terciario{
     text-align: center;
 }
-
+/*Aqui se edita el cuarto contenedor en general*/
 .Cuarto_Contenedor{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -107,4 +109,21 @@ img {
     background-color: white;
     color: black;
     
+    
 }
+/*Aqui se edita los div (mini contenedores) para los logos*/
+.Cuarto_Contenedor div{
+    border-radius: 50% / 40% ;
+    display: inline-block;
+    max-width: 550px;
+    background-color: blanchedalmond;
+
+}
+/*Aqui se editan los logos*/
+.Cuarto_Contenedor div img{
+    height: 50px;
+    width: 100px;
+}
+
+/*--------------------------------------------*/
+/*Aqui se edita el footer*/
