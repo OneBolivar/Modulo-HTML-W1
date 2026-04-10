@@ -1,7 +1,15 @@
+*{
+    margin: 10;
+    padding: 0;
+    
+}
+/*index.html*/
+
 /*Aqui se edita toda la pagina*/
 body{
-    background-color: black;
+    background-color: gray;
     color: white;
+    font-family: monospace;
 }
 
 /*Aqui se modifica el titulo*/
@@ -15,14 +23,37 @@ body{
 /*Aqui se modifica el mensaje arriba de los links*/
 header h2{
     color: cyan;
+    a
 }
 
-/*Aqui se modifican los links*/
-header nav{
-    background-color: gra;
+/*Aqui se modifican los links del index para que cuando pasemos por arriba del link cambie el color*/
+a:hover {
+  color: orange;
+}
+/*Aqui se modifica el header del index*/
+header{
+
 
 }
-/*Aqui se modifican todos los parrafos (p)*/
-p{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+/*links del header*/
+.links ul{
+    font-size: 20px;
 }
+.Sobre_mi{
+    background-color: #333;
+}
+/*Aqui se modifica la seccion proyectos del index*/
+.Proyectos{
+    
+    background-color: #333;
+}
+/*Aqui se modifican los a de la seccion proyectos del index*/
+.Proyectos a{
+    display: flex;
+}
+
+
+/*--------------------------------------------------------------------------------------*/
+
+/*pets.html*/
