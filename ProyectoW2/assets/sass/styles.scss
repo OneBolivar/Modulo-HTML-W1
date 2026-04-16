@@ -1,0 +1,49 @@
+*{
+    margin: 10;
+    
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: gray;
+    font-family: monospace;
+    header{
+        
+        background-color: white;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        h1{
+            margin-left: 7%;/*Esto es para el titulo (Portafolio)*/
+        }
+        
+    }
+    .Seccion1{
+        
+        h2{
+            text-align: center;
+        }
+        .Subtitulo{
+            text-align: center;
+        }
+        div img{
+            display: grid;
+            width: 100%;
+            
+            
+        }
+    }
+
+    .Seccion2{
+       div{
+        display: grid;
+        text-align: center;
+        grid-template-columns: 1fr 1fr 1fr ;      
+        margin-right: -10;
+ 
+       }
+    }
+
+
+}

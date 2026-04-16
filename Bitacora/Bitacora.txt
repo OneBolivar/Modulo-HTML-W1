@@ -61,3 +61,8 @@ Propiedades y Estilos CSS
 
 SASS: 
 sass --watch assets/sass/styles.scss assets/css/style.css
+
+PSEUDO ELEMNTOS Y PSEUDO CLASES
+Pseudo clase = Modifica el estado
+Pseudo Elemento = Modifica el contenido
+nth-child(#) = Esto funciona como el first-child, el "#" es el numero (o la posicion) de lo que queremos modificar

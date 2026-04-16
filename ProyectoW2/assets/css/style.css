@@ -1,0 +1,30 @@
+* {
+  margin: 10;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  background-color: gray;
+  font-family: monospace; }
+  body header {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+    body header h1 {
+      margin-left: 7%;
+      /*Esto es para el titulo (Portafolio)*/ }
+  body .Seccion1 h2 {
+    text-align: center; }
+  body .Seccion1 .Subtitulo {
+    text-align: center; }
+  body .Seccion1 div img {
+    display: grid;
+    width: 100%; }
+  body .Seccion2 div {
+    display: grid;
+    text-align: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-right: -10; }
+
+/*# sourceMappingURL=style.css.map */
