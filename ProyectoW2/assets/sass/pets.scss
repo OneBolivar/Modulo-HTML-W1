@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    section{
+        
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        div{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        img{
+            width: 40%;
+            height: 70%;
+            border: 2px solid red;
+        }        
+    }
+
+}
