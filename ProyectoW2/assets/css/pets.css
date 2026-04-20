@@ -1,19 +1,29 @@
+/*Propiedades generales*/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box; }
 
-body section {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); }
-  body section div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; }
-  body section img {
-    width: 40%;
-    height: 70%;
-    border: 2px solid red; }
+/*Aqui se edita todo el cuerpo de la pagina pets*/
+body {
+  /*Aqui se edita la seccion que contiene las imagenes*/ }
+  body section {
+    background-color: blueviolet;
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /*Aqui se edita el div para las imagenes*/
+    /*Aqui se editan las imagenes en especifico*/ }
+    body section div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+    body section .img-pets {
+      max-width: 50%;
+      height: auto;
+      border: 2px solid red;
+      margin-top: 10px;
+      margin-bottom: 5px; }
 
 /*# sourceMappingURL=pets.css.map */
