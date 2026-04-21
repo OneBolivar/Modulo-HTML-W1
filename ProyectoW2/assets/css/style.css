@@ -7,10 +7,29 @@ body {
   background-color: gray;
   font-family: monospace; }
   body header {
+    /*Aqui se modifica el boton, se coloca display none para que no se vea en pantalla grande*/
+    /*Condicional del media query, si es menor a 897 px entonces se hara la condicion puesta*/
+    /*Aqui se editan los links para pantallas grandes*/
     background-color: white;
     display: flex;
     align-items: center;
     justify-content: space-between; }
+    body header .boton-menu {
+      display: none; }
+    @media (max-width: 597px) {
+      body header .boton-menu {
+        /**/
+        display: block; }
+      body header nav {
+        /*Propiedades exclusivas para el menu hamburguesa*/
+        bottom: 1px;
+        right: 28px;
+        display: flex;
+        position: relative;
+        background-color: rgba(3, 215, 247, 0.391);
+        display: none; }
+        body header nav.active {
+          display: block; } }
     body header h1 {
       margin-left: 7%;
       /*Esto es para el titulo (Portafolio)*/ }

@@ -9,7 +9,34 @@ body{
     background-color: gray;
     font-family: monospace;
     header{
-        
+        /*Aqui se modifica el boton, se coloca display none para que no se vea en pantalla grande*/
+        .boton-menu{
+            display: none;
+            
+        }
+        /*Condicional del media query, si es menor a 897 px entonces se hara la condicion puesta*/
+        @media (max-width: 597px) {
+
+            .boton-menu{    /**/
+                display: block;    
+            }
+        nav{/*Propiedades exclusivas para el menu hamburguesa*/
+            bottom: 1px;
+            right: 28px;
+            display: flex;
+            position: relative;
+            
+            background-color: rgba(3, 215, 247, 0.391);
+            display: none;
+            &.active{
+                display: block;
+            }
+
+        }            
+           
+        }
+
+        /*Aqui se editan los links para pantallas grandes*/
         background-color: white;
         display: flex;
         align-items: center;
