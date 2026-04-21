@@ -6,6 +6,49 @@
 }
 /*Aqui se edita todo el cuerpo de la pagina pets*/
 body{
+/*-----------*/
+    header {
+
+        /*Aqui se modifica el boton, se coloca display none para que no se vea en pantalla grande*/
+        .boton-menu {
+            display: none;
+            background-color: gray;
+            color: white;
+            padding: 15px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+             &:hover {
+                    background-color: purple;
+                }
+        }
+
+        /*Condicional del media query, si es menor a 897 px entonces se hara la condicion puesta*/
+        @media (max-width: 597px) {
+            .boton-menu {
+                display: block;
+
+               
+            }
+
+            nav {
+                /*Propiedades exclusivas para el menu hamburguesa*/
+                bottom: 1px;
+                right: 28px;
+                display: flex;
+                position: relative;
+                
+                background-color: rgba(3, 215, 247, 0.391);
+                display: none;
+
+                &.active {
+                    display: block;
+                }
+
+            }
+
+        }
+
+/*--------*/    
     a{
         color: white;
     }
@@ -59,4 +102,5 @@ body{
 
     }
 
+}
 }
