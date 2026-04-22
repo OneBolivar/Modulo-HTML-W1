@@ -5,7 +5,10 @@
 
 body {
   background-color: gray;
-  font-family: monospace; }
+  font-family: monospace;
+  /*------------------------------------------------------------*/
+  /*-------------------------------------------------------------*/
+  /*---------------------------------------------------------------*/ }
   body header {
     /*Aqui se modifica el boton, se coloca display none para que no se vea en pantalla grande*/
     /*Condicional del media query, si es menor a 597 px entonces se hara la condicion puesta*/
@@ -13,8 +16,7 @@ body {
     background-color: white;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    /*----------*/ }
+    justify-content: space-between; }
     body header .boton-menu {
       display: none;
       background-color: gray;
@@ -39,7 +41,12 @@ body {
           display: flex;
           flex-direction: column; }
           body header nav.active a {
-            color: white; } }
+            color: white; }
+      body header .Seccion2 div {
+        display: flex;
+        text-align: center;
+        flex-direction: row;
+        margin-right: -10; } }
     body header h1 {
       margin-left: 7%;
       /*Esto es para el titulo (Portafolio)*/ }
@@ -53,7 +60,7 @@ body {
   body .Seccion2 div {
     display: grid;
     text-align: center;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     margin-right: -10; }
   body footer {
     display: flex;
@@ -64,5 +71,10 @@ body {
     body footer .LogoFooter img {
       height: 35px;
       width: 35px; }
+
+/*Ya funciona, solo debemos encontrar la forma de alinearlo vertical y no horizontal*/
+@media (max-width: 597px) {
+  .Seccion2 div {
+    background-color: red; } }
 
 /*# sourceMappingURL=style.css.map */

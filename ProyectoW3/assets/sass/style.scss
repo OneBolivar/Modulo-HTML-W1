@@ -10,7 +10,7 @@ body {
     font-family: monospace;
 
     header {
-        
+
         /*Aqui se modifica el boton, se coloca display none para que no se vea en pantalla grande*/
         .boton-menu {
             display: none;
@@ -27,7 +27,6 @@ body {
 
         /*Condicional del media query, si es menor a 597 px entonces se hara la condicion puesta*/
         @media (max-width: 597px) {
-            
             .boton-menu {
                 display: block;
 
@@ -53,8 +52,18 @@ body {
                 }
             }
 
-        }
+            .Seccion2 {
+                div {
+                    display: flex;
+                    text-align: center;
+                    flex-direction: row;
+                    margin-right: -10;
+                    
+                }
 
+            }
+        }
+        
         /*Aqui se editan los links para pantallas grandes*/
         background-color: white;
         display: flex;
@@ -66,10 +75,8 @@ body {
             /*Esto es para el titulo (Portafolio)*/
         }
 
-        /*----------*/
-
     }
-
+/*------------------------------------------------------------*/
     .Seccion1 {
 
         h2 {
@@ -87,17 +94,17 @@ body {
 
         }
     }
-
+/*-------------------------------------------------------------*/
     .Seccion2 {
         div {
             display: grid;
             text-align: center;
-            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-columns: repeat(3, 1fr);
             margin-right: -10;
-
+            
         }
     }
-
+/*---------------------------------------------------------------*/
     footer {
 
         display: flex;
@@ -117,4 +124,16 @@ body {
     }
 
 
+}
+
+
+/*Ya funciona, solo debemos encontrar la forma de alinearlo vertical y no horizontal*/
+@media (max-width: 597px) {
+    .Seccion2{
+        div{
+            background-color: red;
+        }
+        
+        
+    }
 }
