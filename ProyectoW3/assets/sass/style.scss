@@ -26,7 +26,7 @@ body {
         }
 
         /*Condicional del media query, si es menor a 597 px entonces se hara la condicion puesta*/
-        @media (max-width: 597px) {
+        @media (max-width: 597px), (min-width: 597px) and (max-width: 1280px) {
             .boton-menu {
                 display: block;
 
@@ -114,7 +114,7 @@ body {
 
     }
     /*---- media queries ----*/
-
+    /*Media query para pantallas pequeñas*/
     @media (max-width:597px) {
         .Seccion2 {
             div {
@@ -127,6 +127,19 @@ body {
             }
         }
     }
+    /*Media query para tablets*/
+    @media (min-width:597px) and  (max-width: 1280px) {
+        .Seccion2 {
+            div {
+                background-color: white;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+               a{
+                color: black;
+               }
+            }
+        }
+    }    
 }
 
 

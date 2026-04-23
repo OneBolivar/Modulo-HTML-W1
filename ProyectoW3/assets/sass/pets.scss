@@ -112,6 +112,24 @@ body {
 
 
     }
-
-
+/*Media query para pantallas pequeñas*/
+@media (max-width:597px) {
+    .imagenes {
+        background-color: blueviolet;
+        margin: 2px;
+        padding: 2px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+/*Media query para tablets*/
+@media (min-width:720px) and  (max-width: 1280px) {
+    .imagenes {
+        background-color: blueviolet;
+        margin: 2px;
+        padding: 2px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
 }

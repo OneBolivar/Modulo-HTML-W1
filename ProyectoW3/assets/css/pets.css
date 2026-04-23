@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*Propiedades generales*/
 * {
   margin: 1;
@@ -7,7 +8,9 @@
 /*Aqui se edita todo el cuerpo de la pagina pets*/
 body {
   /*-----------*/
-  /*Aqui se edita la seccion que contiene las imagenes*/ }
+  /*Aqui se edita la seccion que contiene las imagenes*/
+  /*Media query para pantallas pequeñas*/
+  /*Media query para tablets*/ }
   body header {
     display: flex;
     justify-content: space-between;
@@ -78,5 +81,19 @@ body {
     body footer .LogoFooter img {
       height: 35px;
       width: 35px; }
+  @media (max-width: 597px) {
+    body .imagenes {
+      background-color: blueviolet;
+      margin: 2px;
+      padding: 2px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); } }
+  @media (min-width: 720px) and (max-width: 1280px) {
+    body .imagenes {
+      background-color: blueviolet;
+      margin: 2px;
+      padding: 2px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); } }
 
 /*# sourceMappingURL=pets.css.map */

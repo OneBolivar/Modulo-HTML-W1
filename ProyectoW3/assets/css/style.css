@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 10;
   padding: 0;
@@ -9,7 +10,9 @@ body {
   /*------------------------------------------------------------*/
   /*-------------------------------------------------------------*/
   /*---------------------------------------------------------------*/
-  /*---- media queries ----*/ }
+  /*---- media queries ----*/
+  /*Media query para pantallas pequeñas*/
+  /*Media query para tablets*/ }
   body header {
     /*Aqui se modifica el boton, se coloca display none para que no se vea en pantalla grande*/
     /*Condicional del media query, si es menor a 597 px entonces se hara la condicion puesta*/
@@ -27,7 +30,7 @@ body {
       transition: background-color 0.3s ease; }
       body header .boton-menu:hover {
         background-color: purple; }
-    @media (max-width: 597px) {
+    @media (max-width: 597px), (min-width: 597px) and (max-width: 1280px) {
       body header .boton-menu {
         display: block; }
       body header nav {
@@ -72,6 +75,13 @@ body {
       background-color: white;
       display: flex;
       flex-direction: column; }
+      body .Seccion2 div a {
+        color: black; } }
+  @media (min-width: 597px) and (max-width: 1280px) {
+    body .Seccion2 div {
+      background-color: white;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); }
       body .Seccion2 div a {
         color: black; } }
 
