@@ -9,6 +9,9 @@
 body {
   /*-----------*/
   /*Aqui se edita la seccion que contiene las imagenes*/
+  /*-------------------------*/
+  /*----------------------------*/
+  /*------------------------------------------------------------------------------------*/
   /*Media query para pantallas pequeñas*/
   /*Media query para tablets*/ }
   body header {
@@ -27,7 +30,7 @@ body {
       border-radius: 5px;
       transition: background-color 0.3s ease; }
       body header .boton-menu:hover {
-        background-color: purple; }
+        background-color: blueviolet; }
     @media (max-width: 597px) {
       body header .boton-menu {
         display: block; }
@@ -69,9 +72,43 @@ body {
       max-width: 80%;
       max-height: 80%;
       height: auto;
-      border: 2px solid red;
+      border: 2px solid gray;
       margin-top: 10px;
       margin-bottom: 5px; }
+    body section .Nombres {
+      display: none;
+      background-color: gray; }
+      body section .Nombres.active {
+        display: block !important; }
+  body .botones-extras {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /*Esto es para el boton de ver mas (Informacion extra)*/
+    /*Aqui acaba la modificacion del info extra*/
+    /*Aqui es el boton de nombres*/
+    /*Aqui acaba el boton de nombres*/ }
+    body .botones-extras .boton-ver-mas {
+      background-color: gray;
+      color: white;
+      padding: 15px 20px;
+      border-radius: 5px;
+      transition: background-color 0.3s ease; }
+      body .botones-extras .boton-ver-mas:hover {
+        background-color: blueviolet; }
+    body .botones-extras .info-extra {
+      display: none;
+      background-color: gray;
+      text-align: center; }
+      body .botones-extras .info-extra.active {
+        display: block; }
+    body .botones-extras .boton-nombres {
+      background-color: gray;
+      color: white;
+      padding: 15px 20px;
+      border-radius: 5px;
+      transition: background-color 0.3s ease; }
+      body .botones-extras .boton-nombres:hover {
+        background-color: blueviolet; }
   body footer {
     display: flex;
     justify-content: space-between;
