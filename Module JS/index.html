@@ -6,10 +6,17 @@
     <title>Document</title>
 </head>
 <body>
-    <main id="character"></main>
-    <!-- Se agrega el botón que el JS busca por ID -->
-    <button id="loadMore" onclick="loadMore()">Load More</button>
-
+    <main>
+        <ul id="character"></ul>
+        <button id="loadPrevId" 
+            data-prev="" 
+            onclick="loadPrev()"
+        >Anterior</button>
+        <button id="loadNextId" 
+            data-next="" 
+            onclick="loadNext()"
+        >Siguiente</button>
+    </main>
     <script src="api.js"></script>
 </body>
 </html>
